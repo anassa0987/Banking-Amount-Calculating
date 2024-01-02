@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Banking Management</title> 
+	<link rel="icon" type="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+
+</head>
+<body>
+
+
+	<div class="t" style=" position: relative; display: flex; width: 100vw; padding: 3em 1em 1em 1em ; height: 5em;  ">
+
+
+		<div class="dd">
+		<div class='amount' style=" padding-left: 1em; color:white">
+ 			<span style=" margin-left: 2.4em; display: flex; font-size: 1em;">Current Account</span>
+ 		</div>
+
+
+ 		<div class="asa " style="margin-left: 1em; display: none; color: white; display: flex; justify-content: space-between;" >
+			<!-- <span  style="margin-left: 1em; font-size: 2.5em">₹ 343,254</span> -->
+
+			<h2 style="margin-left: 1em; display: flex;  font-size: 2.5em">₹ <span id="current-balance">0</span></h2>
+
+
+			<div class="btn" style=" position: relative; display: none; margin-left: 3em; margin-top: -1em; padding: 0.7em">
+
+
+		<button id="btn1" style="width: 12em; cursor: pointer; display: none; font-size: 1em; padding: 0.8em; background: rgb(183, 240, 165); border: 0; border-radius:0.6em">Deposite</button>
+
+
+		<button id="ry" style="margin-left: 1em; border:1px solid white; cursor: pointer;">Withdraw</button>
+	</div>
+		</div>
+
+
+
+</div>
+
+
+
+<div class="icon" id="icon" style="color: white; font-size: 2em; float: right; margin-left: 16em; position:relative ;  cursor: pointer;">
+
+
+
+
+	</div>
+
+	</div>
+
+
+
+
+  <div id="account-area">
+        <div class="container">
+            <div class="row" style="">
+                <div class="col-lg-4 mb-3" id="depos" style="">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2 style="display: flex">₹ <span id="current-deposit">00</span></h2>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3" id="withd" style="">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2 style="display: flex">₹ <span id="current-withdraw">00</span></h2>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3" id="balance" style="">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2 style="display: flex">₹ <span id="total-balance">0</span></h2>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" style="display: block;">
+                <div class="col-lg-6" id="depo">
+                    <div class="submit-area" id="deposite" style="">
+                        <h4>Deposit Amount</h4>
+                        <input id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br>
+                        <button id="deposit-btn" style="position: relative;" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" id="with">
+                    <div class="submit-area" style="">
+                        <h4>Withdraw Amount</h4>
+                        <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br>
+                        <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
